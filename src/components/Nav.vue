@@ -1,11 +1,8 @@
 <template>
   <header>
     <div class="spacer" />
-    <div
-      v-if="showMenu"
-      style="position:fixed; top:0; left:0; height:100vh; width:100%; background:#caffbf; z-index:4;"
-    ></div>
-    <nav style="z-index:5; position:relative;">
+    <div v-if="showMenu" class="menu-bg"></div>
+    <nav>
       <input
         class="menu-btn"
         type="checkbox"
@@ -39,7 +36,7 @@
 
 <script>
 export default {
-  name: "Nav"
+  name: "Nav",
 };
 </script>
 
@@ -49,7 +46,20 @@ export default {
   width: 100%;
 }
 
+.menu-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #caffbf;
+}
 
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
 nav .menu .menu-item {
   text-align: left;
@@ -65,6 +75,7 @@ nav .menu {
   overflow: hidden;
   box-sizing: border-box;
   color: black;
+
 }
 
 nav .menu .logo {
@@ -160,12 +171,13 @@ nav {
   max-width: 1100px;
   box-sizing: border-box;
 
+
   /* border: solid 1px #f8f9fa; */
 }
 
 nav .menu .menu-item {
   color: black;
-  opacity: 50% ;
+
   cursor: pointer;
   display: block;
   padding: 20px;
@@ -182,21 +194,21 @@ nav .menu .menu-item {
   font-size: 30px;
   box-sizing: border-box;
   text-align: center;
+  
 }
 
-nav .menu .menu-item:hover {
-  opacity: 100%;
-}
+// nav .menu .menu-item:hover {
+//   // opacity: 100%;
+// }
 
 nav .menu-btn {
   display: none;
 }
 
-.router-link-exact-active {
-  opacity: 100% !important;
-}
+// .router-link-exact-active {
+//   // opacity: 100% !important;
+// }
 </style>
-
 
 <script>
 export default {
@@ -205,21 +217,20 @@ export default {
   watch: {
     showMenu: function(newVal, oldVal) {
       console.log(newVal);
-    }
+    },
   },
 
   methods: {
     closeMenu() {
       console.log("called");
       this.showMenu = false;
-    }
+    },
   },
 
   data: function() {
     return {
-      showMenu: false
+      showMenu: false,
     };
-  }
+  },
 };
 </script>
-
