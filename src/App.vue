@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    
-    <Nav/>
-  
-    <br>
+    <Nav />
+
+    <br />
     <router-view class="main" />
 
     <footer>
@@ -22,8 +21,8 @@ import Nav from "@/components/Nav.vue";
 export default {
   name: "App",
   components: {
-    Nav
-  }
+    Nav,
+  },
 };
 </script>
 
@@ -33,9 +32,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 
-  font-family: Helvetica, sans-serif;
   color: #2e2e2e;
-  font-family: Helvetica, serif;
+  font-family: "MerriWeather", serif;
   padding: 0;
   margin: 0;
 }

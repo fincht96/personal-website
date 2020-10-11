@@ -75,7 +75,6 @@ nav .menu {
   overflow: hidden;
   box-sizing: border-box;
   color: black;
-
 }
 
 nav .menu .logo {
@@ -171,12 +170,11 @@ nav {
   max-width: 1100px;
   box-sizing: border-box;
 
-
   /* border: solid 1px #f8f9fa; */
 }
 
 nav .menu .menu-item {
-  color: black;
+  color: #a5a5a5;
 
   cursor: pointer;
   display: block;
@@ -194,20 +192,19 @@ nav .menu .menu-item {
   font-size: 30px;
   box-sizing: border-box;
   text-align: center;
-  
 }
 
-// nav .menu .menu-item:hover {
-//   // opacity: 100%;
-// }
+nav .menu .menu-item:hover {
+  color: #4d4d4d !important;
+}
 
 nav .menu-btn {
   display: none;
 }
 
-// .router-link-exact-active {
-//   // opacity: 100% !important;
-// }
+.router-link-exact-active {
+  color: #4d4d4d !important;
+}
 </style>
 
 <script>
