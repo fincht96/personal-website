@@ -11,7 +11,7 @@
     <br />
     <p style="text-align:center; font-size:18px;">
       A Macclesfield based software developer trying to decide where software
-      can’t be the solution.
+      can’t be the solution to the problem.
     </p>
 
     <br />
@@ -27,8 +27,8 @@
       >Asthma Tracking Web App</a
     >
     <p>
-      Having recently required to log my peak expiratory flow (PEF) readings and
-      finding that I had to do this rather inconveniently on a paper graph,
+      Having been recently required to log my peak expiratory flow (PEF) readings and
+      finding that I had to do this, rather inconveniently, on a paper graph,
       basically a giant fold map. I decided to create my own solution.<br />
       A full stack MongoDB, Node and Vue js based solution that enables users to
       sign up, log their daily peak flow readings and visualise their results in
