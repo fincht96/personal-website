@@ -1,5 +1,10 @@
 # personal-website
 
+## See live
+
+<a>https://fincht96.github.io/personal-website/</a>
+
+
 ## Project setup
 ```
 npm install
